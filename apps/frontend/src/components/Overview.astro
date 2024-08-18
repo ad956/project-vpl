@@ -1,0 +1,39 @@
+---
+const logoUrl =
+  "https://res.cloudinary.com/dtkfvp2ic/image/upload/v1723796237/vpl/vpl-logo_wzbbvv.jpg";
+---
+
+<section
+  class="py-20 bg-gray-900 text-white flex items-center justify-center relative"
+>
+  <div class="absolute inset-0 bg-black opacity-60"></div>
+  <div
+    class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between relative z-10"
+  >
+    <div class="w-full md:w-1/2 mb-8 md:mb-0">
+      <h2
+        class="text-3xl md:text-4xl font-extrabold mb-6 text-gradient bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500"
+      >
+        Vishwakarma Premier League (VPL)
+      </h2>
+      <p class="text-base md:text-lg leading-relaxed mb-6">
+        <strong class="text-xl">Vishwakarma Premier League (VPL) 🏏</strong> is a
+        premier cricket tournament registration platform that leverages modern web
+        technologies to offer an unparalleled experience for cricket enthusiasts
+        and organizers.
+      </p>
+      <p class="text-base md:text-lg leading-relaxed mt-6">
+        With VPL, we aim to bring cricket tournaments to the next level,
+        providing a dynamic platform that keeps everyone engaged and informed
+        throughout the event.
+      </p>
+    </div>
+    <div class="w-full md:w-1/2 flex justify-center">
+      <img
+        src={logoUrl}
+        alt="VPL Logo"
+        class="w-3/4 md:w-2/3 h-auto rounded-full transform transition-transform duration-500 hover:scale-110 hover:rotate-6 shadow-lg"
+      />
+    </div>
+  </div>
+</section>
