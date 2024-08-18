@@ -2,6 +2,8 @@
 
 A cricket tournament registration site built with modern web technologies.
 
+<img src="https://res.cloudinary.com/dtkfvp2ic/image/upload/v1723796237/vpl/vpl-logo_wzbbvv.jpg" height=200 width=300>
+
 ## 🚀 Technologies Used
 
 ![Astro](https://skillicons.dev/icons?i=astro)
