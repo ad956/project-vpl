@@ -6,22 +6,37 @@ const winners = [
 ];
 ---
 
-<section class="py-20 bg-gray-900">
-  <div class="container mx-auto px-4">
-    <h2
-      class="text-5xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-600"
+<section class="py-24 bg-gray-900 relative overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <video
+      autoplay
+      muted
+      loop
+      class="absolute inset-0 w-full h-full object-cover"
     >
+      <source src="/path/to/your/video.mp4" type="video/mp4" />
+    </video>
+    <div class="absolute inset-0 bg-black opacity-70"></div>
+    <div
+      class="absolute inset-0 bg-gradient-to-br from-transparent to-black opacity-40"
+    >
+    </div>
+  </div>
+  <div class="container mx-auto px-6 relative z-10">
+    <h2 class="text-5xl font-bold text-center mb-12 text-white">
       Hall of Fame
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {
         winners.map((winner) => (
-          <div class="bg-gray-800 p-8 rounded-2xl shadow-lg transition-transform transform hover:scale-105">
-            <h3 class="text-3xl font-bold text-cyan-400 mb-4">
-              {winner.year} Champions
-            </h3>
-            <p class="text-white text-2xl mb-2">{winner.team}</p>
-            <p class="text-gray-400">Captain: {winner.captain}</p>
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+            <div class="p-4">
+              <h3 class="text-3xl font-semibold text-teal-400 mb-2">
+                {winner.year} Champions
+              </h3>
+              <p class="text-white text-lg mb-1">{winner.team}</p>
+              <p class="text-gray-400 italic">Captain: {winner.captain}</p>
+            </div>
           </div>
         ))
       }
