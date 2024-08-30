@@ -1,4 +1,4 @@
-# VPL (Virtual Premier League) 🏏
+# VPL (Vishwakarma Premier League) 🏏
 
 A cricket tournament registration site built with modern web technologies.
 
